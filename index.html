@@ -251,7 +251,7 @@ footer{text-align:center;padding:3rem 2rem;color:rgba(255,255,255,.12);font-fami
 
   <!-- HERO -->
   <section class="hero" id="top">
-    <span class="hero-badge">AI-Driven Semi-Auto Day Trading</span>
+    <span class="hero-badge">国内株式デイトレード専用自動売買ツール</span>
     <h1 class="hero-title">
       <span class="glitch" data-text="DayDog">DayDog</span>
       <span class="hero-title-sub">Intelligent Trading Pipeline</span>
@@ -670,7 +670,7 @@ footer{text-align:center;padding:3rem 2rem;color:rgba(255,255,255,.12);font-fami
 
     const proj=persp(.7,1,.1,100);
     const bobY=Math.sin(time*1.5)*.08;
-    const model=m4(m4(tr(0,bobY-0.1,-4),rY(time*.4+mx*1.5)),rX(my*0.3));
+    const model=m4(m4(tr(0,bobY-0.1,-4),rY(time*.4+mx*1.5+Math.PI*0.75)),rX(my*0.3));
     const mvp=m4(proj,model);
 
     gl.useProgram(prog);
